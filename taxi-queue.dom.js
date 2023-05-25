@@ -1,5 +1,5 @@
 // write your DOM code here.
-
+const sectionElement = document.querySelectorAll(".section")
 
 // DOM element references
 

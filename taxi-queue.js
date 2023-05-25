@@ -1,36 +1,35 @@
 function TaxiQueue() {
+  var PeopleOnQueue = 0;
+  var taxiJoins = 0;
 
+  function joinQueue() {
+    PeopleOnQueue += 1;
+  }
 
-	function joinQueue() {
+  function leaveQueue() {
+	
+  }
 
-	}
+  function joinTaxiQueue() {
+	taxiJoins += 1
+  }
 
-	function leaveQueue() {
+  function queueLength() {
+    return PeopleOnQueue;
+  }
 
-	}
+  function taxiQueueLength() {
+	return taxiJoins
+  }
 
-	function joinTaxiQueue() {
+  function taxiDepart() {}
 
-	}
-
-	function queueLength() {
-
-	}
-
-	function taxiQueueLength() {
-
-	}
-
-	function taxiDepart(){
-
-	}
-
-	return {
-		joinQueue,
-		leaveQueue,
-		joinTaxiQueue,
-		queueLength,
-		taxiQueueLength,
-		taxiDepart
-	}
+  return {
+    joinQueue,
+    leaveQueue,
+    joinTaxiQueue,
+    queueLength,
+    taxiQueueLength,
+    taxiDepart,
+  };
 }
